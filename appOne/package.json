@@ -10,15 +10,19 @@
     "start": "node chatapp.js"
   },
   "dependencies": {
-     "express": "*",
-     "socket.io": "*"
+    "express": "*",
+    "socket.io": "*"
   },
-
   "repository": {
     "type": "git",
-    "url": "https://github.com/quito12487/chatsutracomim"
+    "url": "git+https://github.com/quito12487/chatsutracomim.git"
   },
- 
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/quito12487/chatsutracomim/issues"
+  },
+  "homepage": "https://github.com/quito12487/chatsutracomim#readme",
+  "devDependencies": {},
+  "author": "quito"
 }
 
