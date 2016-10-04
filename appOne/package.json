@@ -1,26 +1,26 @@
 {
-  "name": "node-js-getting-started",
+  "name": "sutracomim",
   "version": "0.2.5",
   "description": "A sample Node.js app using Express 4",
   "engines": {
-    "node": "5.9.1"
+    "node": "6.6.0"
   },
-  "main": "index.js",
+  "main": "chatapp.js",
   "scripts": {
     "start": "node index.js"
   },
   "dependencies": {
-    "ejs": "2.4.1",
-    "express": "4.13.3"
+     "express": "*",
+     "socket.io": "*"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/heroku/node-js-getting-started"
+    "url": "https://github.com/quito12487/chatsutracomim"
   },
   "keywords": [
     "node",
     "heroku",
     "express"
   ],
-  "license": "MIT"
+  "license": "ISC"
 }
