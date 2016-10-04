@@ -1,9 +1,13 @@
 var app = require('express')();
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
-var PORT = 5000;
+var PORT = 3000;
 nicknames = {};
-app.set('port', (process.env.PORT || 5000))
+
+app.listen(process.env.PORT || 3000, function(){
+  console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
+});
+
 app.get('/',function(req,res){
 
 	//res.send('<h1>Hola mundo</h1>');
@@ -66,7 +70,3 @@ io.sockets.on('connection',function(socket){
 	}
 });
 
-
-http.listen(PORT, function(){
-	console.log('el servidor esta escuchando el puerto %s', PORT);
-});
